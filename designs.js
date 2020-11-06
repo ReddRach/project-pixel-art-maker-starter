@@ -21,4 +21,10 @@ function makeGrid() {
     for (let y=0; y<width; y++){
       let columns=document.createElement('td');
       rows.appendChild(columns);
+      columns.addEventListener('click',function(e){
+        e.target.style.backgroundColor=color.value;
+      });
+      table.appendChild(rows);
+    }
+  }
 }
