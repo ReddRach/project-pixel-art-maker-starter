@@ -1,7 +1,7 @@
 // Select color input
 const color=document.querySelector("#colorPicker");
 // Select size input
-const size= document.querySelector("sizePicker");
+const size=document.querySelector("sizePicker");
 const table=document.querySelector("pixelCanvas");
 
 // When size is submitted by the user, call makeGrid()
@@ -16,5 +16,9 @@ function makeGrid() {
   let height=document.querySelector('#inputHeight").value;
   let width=document.querySelector('#inputWidth").value;
 // Your code goes here!
-
+  for (let x=0; x<height; x++){
+    let rows=document.createElement('tr');
+    for (let y=0; y<width; y++){
+      let columns=document.createElement('td');
+      rows.appendChild(columns);
 }
