@@ -13,8 +13,8 @@ size.addEventListener('submit', function(e) {
 //makeGrid()
 function makeGrid() {
   table.innerHTML="";
-  let height=document.querySelector('#inputHeight").value;
-  let width=document.querySelector('#inputWidth").value;
+  let height=document.querySelector("#inputHeight").value;
+  let width=document.querySelector("#inputWidth").value;
 // Your code goes here!
   for (let x=0; x<height; x++){
     let rows=document.createElement('tr');
